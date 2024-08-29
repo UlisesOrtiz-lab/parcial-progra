@@ -41,3 +41,12 @@ prestamo = Prestamo(usuario, libro, fecha_prestamo)
 
 fecha_devolucion = fecha_prestamo + timedelta(days=16) 
 prestamo.devolver_libro(fecha_devolucion)
+
+#Una empresa de renta de transporte necesita gestionar la disponibilidad de varios 
+# tipos de vehículos para renta, registrar a los clientes que los alquilan y calcular 
+# el costo total de la renta en función de la duración del alquiler.
+# se abordo asi porque nos permite organizar el código de forma modular y clara. 
+# Separar la lógica en diferentes clases hace que sea más sencillo manejar la complejidad a
+#  medida que el programa crezca. Por ejemplo, si en el futuro necesitamos añadir nuevos 
+# tipos de vehículos o gestionar devoluciones de vehículos, podemos ampliar las clases existentes
+#  sin cambiar demasiado el resto del código.
